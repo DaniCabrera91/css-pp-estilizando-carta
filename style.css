@@ -1,0 +1,133 @@
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+  } 
+
+
+
+body{
+    font-family: Merriweather, serif;
+    padding:0 5%;
+}
+.address{
+    text-align: right; 
+    margin-right: 45px;
+    margin-left: 200px;
+}
+
+.tel, .mail{
+    text-decoration: none; color: black;
+}
+.tel:hover, .mail:hover{color:#3177ac;}
+
+/* If we want to create escalable content image, we have to let content empty
+and then add background with url followed by background-size and background-repeat: no repeat. */
+
+.tel:hover::after{
+    content: " ";
+    background-image: url(tel.png);
+    position: absolute;
+    top: 15%;
+    left: 92%;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: 15%; 
+}
+
+.mail:hover::after{
+    content: " ";
+    background-image: url(mail.png);
+    position: absolute;
+    top: 18%;
+    left: 92%;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: 15%; 
+}
+
+/* .tel:hover::after{
+content: "";
+background-image: url("tel.png");
+position: absolute;
+top: -10%;
+left:80%;
+bottom: 0;
+right: 0;
+background-repeat: no-repeat;
+background-size: 2%;} */
+
+/* Original Code:
+.mail:hover::after{
+    position: fixed;
+    top: 17%;
+    left: -2%;
+    content: " ";
+    background: url(mail.png);
+    background-size: 15% 30%;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 10%;
+    margin-left: 95%;  
+} */
+
+a{ 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link{color: #4fa2ae;}
+
+a:visited{color:#c44a4a;}
+
+a:hover{color:#3177ac;}
+
+a:focus{color:#c44a4a;}
+
+p{hyphens: auto;}
+
+.list{
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: #8e8e8e;
+}
+
+cite {
+    quotes: '"' '"' "'" "'";
+  }
+cite:before {
+    content: open-quote;
+  }
+cite:after {
+    content: close-quote;
+  }
+em {
+    font-style:oblique;
+    font-weight: bold;
+}
+
+footer{ 
+    height: 50px;
+    background-color: #323232;
+    padding: 10px 10px
+}
+
+.cite{ 
+    color: aliceblue;
+    vertical-align: middle;
+    text-align: center;
+}
