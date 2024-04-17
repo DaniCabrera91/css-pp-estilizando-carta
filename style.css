@@ -120,6 +120,11 @@ em {
     font-weight: bold;
 }
 
+.name{
+    font-weight:bold;
+    line-height: 50px;
+}
+
 footer{ 
     height: 50px;
     background-color: #323232;
